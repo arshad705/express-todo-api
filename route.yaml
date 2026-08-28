@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: todo-api
+spec:
+  to:
+    kind: Service
+    name: todo-api
+  port:
+    targetPort: 3000
